@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 
 def draw_graph(x, y):
     plt.plot(x, y)
-    plt.title('График')
+    plt.title('Graфik')
     plt.xlabel('День')
     plt.ylabel('Кол-во сорвавшихся')
     plt.grid(True)
@@ -21,5 +21,8 @@ def get_website_statistics():
 
 
 if __name__ == "__main__":
-    x,y = get_website_statistics()
-    draw_graph(x, y)
+    a = 8
+    b = 100
+    x, y = get_website_statistics()
+    # print(x)
+    draw_graph(x[a:b+1], y[a:b+1])
